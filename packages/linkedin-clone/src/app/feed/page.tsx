@@ -24,6 +24,12 @@ export default function Feed() {
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-blue-600">Linked</h1>
             <div className="flex items-center gap-4">
+              <a href="/feed" className="text-sm text-blue-600 font-semibold">
+                Feed
+              </a>
+              <a href="/profile" className="text-sm text-gray-700 hover:text-blue-600">
+                Profile
+              </a>
               <span className="text-sm text-gray-700">{profile.fullName}</span>
               <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-semibold">
                 {profile.fullName.charAt(0)}
@@ -49,4 +55,5 @@ export default function Feed() {
     </div>
   );
 }
+
 
