@@ -172,7 +172,7 @@ export default function ProfileSetup() {
               </p>
 
               <div className="flex flex-col items-center">
-                <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center mb-6">
+                <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center mb-6 overflow-hidden">
                   {profile.profilePhoto ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
@@ -195,16 +195,29 @@ export default function ProfileSetup() {
                   )}
                 </div>
 
-                <label className="block text-sm font-medium text-gray-700 mb-2">
-                  Photo URL (optional)
-                </label>
                 <input
-                  type="url"
-                  value={profile.profilePhoto}
-                  onChange={(e) => setProfile({ ...profile, profilePhoto: e.target.value })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900"
-                  placeholder="https://example.com/photo.jpg"
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      const reader = new FileReader();
+                      reader.onloadend = () => {
+                        setProfile({ ...profile, profilePhoto: reader.result as string });
+                      };
+                      reader.readAsDataURL(file);
+                    }
+                  }}
+                  className="hidden"
+                  id="photo-upload"
                 />
+                <label
+                  htmlFor="photo-upload"
+                  className="cursor-pointer bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+                >
+                  Upload Photo
+                </label>
+                <p className="text-sm text-gray-500 mt-2">JPG, PNG, or GIF (max 5MB)</p>
               </div>
 
               <div className="mt-8 flex gap-4">
@@ -228,5 +241,6 @@ export default function ProfileSetup() {
     </div>
   );
 }
+
 
 
