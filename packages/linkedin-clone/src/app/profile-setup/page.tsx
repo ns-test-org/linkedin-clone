@@ -116,7 +116,7 @@ export default function ProfileSetup() {
 
               <button
                 onClick={handleNext}
-                className="mt-8 w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md"
+                className="mt-8 w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md cursor-pointer"
               >
                 Continue
               </button>
@@ -149,13 +149,13 @@ export default function ProfileSetup() {
               <div className="mt-8 flex gap-4">
                 <button
                   onClick={handleSkip}
-                  className="flex-1 bg-white text-amber-900 py-3 rounded-full font-semibold border-2 border-amber-600 hover:bg-amber-50 transition-colors"
+                  className="flex-1 bg-white text-amber-900 py-3 rounded-full font-semibold border-2 border-amber-600 hover:bg-amber-50 transition-colors cursor-pointer"
                 >
                   Skip for now
                 </button>
                 <button
                   onClick={handleNext}
-                  className="flex-1 bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md"
+                  className="flex-1 bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md cursor-pointer"
                 >
                   Continue
                 </button>
@@ -212,13 +212,13 @@ export default function ProfileSetup() {
               <div className="mt-8 flex gap-4">
                 <button
                   onClick={handleFinish}
-                  className="flex-1 bg-white text-amber-900 py-3 rounded-full font-semibold border-2 border-amber-600 hover:bg-amber-50 transition-colors"
+                  className="flex-1 bg-white text-amber-900 py-3 rounded-full font-semibold border-2 border-amber-600 hover:bg-amber-50 transition-colors cursor-pointer"
                 >
                   Skip for now
                 </button>
                 <button
                   onClick={handleFinish}
-                  className="flex-1 bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md"
+                  className="flex-1 bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md cursor-pointer"
                 >
                   Finish
                 </button>
@@ -230,6 +230,7 @@ export default function ProfileSetup() {
     </div>
   );
 }
+
 
 
 

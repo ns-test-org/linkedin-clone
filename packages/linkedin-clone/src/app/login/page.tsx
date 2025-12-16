@@ -29,7 +29,7 @@ export default function Login() {
       {/* Header */}
       <header className="border-b border-amber-200 bg-white/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <Link href="/">
+          <Link href="/" className="cursor-pointer">
             <h1 className="text-3xl font-bold text-amber-900 flex items-center gap-2">
               💩 StinkedIn
             </h1>
@@ -84,7 +84,7 @@ export default function Login() {
             </div>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md"
+              className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md cursor-pointer"
             >
               Sign In
             </button>
@@ -93,7 +93,7 @@ export default function Login() {
           <div className="mt-6 text-center">
             <p className="text-sm text-amber-700">
               Don&apos;t have an account?{' '}
-              <Link href="/" className="font-semibold text-amber-900 hover:text-amber-700 underline">
+              <Link href="/" className="font-semibold text-amber-900 hover:text-amber-700 underline cursor-pointer">
                 Join now
               </Link>
             </p>
@@ -103,6 +103,7 @@ export default function Login() {
     </div>
   );
 }
+
 
 
 

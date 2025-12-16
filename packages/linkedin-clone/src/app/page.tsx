@@ -31,7 +31,7 @@ export default function Landing() {
             <span className="text-sm text-amber-700">Already a member?</span>
             <Link
               href="/login"
-              className="px-6 py-2 border-2 border-amber-600 text-amber-900 rounded-full font-semibold hover:bg-amber-50 transition-colors"
+              className="px-6 py-2 border-2 border-amber-600 text-amber-900 rounded-full font-semibold hover:bg-amber-50 transition-colors cursor-pointer"
             >
               Sign in
             </Link>
@@ -89,7 +89,7 @@ export default function Landing() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md"
+                className="w-full bg-gradient-to-r from-amber-600 to-orange-600 text-white py-3 rounded-full font-semibold hover:from-amber-700 hover:to-orange-700 transition-all shadow-md cursor-pointer"
               >
                 Join & Add to Shame Board
               </button>
@@ -103,6 +103,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 
