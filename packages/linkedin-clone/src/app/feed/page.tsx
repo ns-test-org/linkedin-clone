@@ -25,9 +25,9 @@ export default function Feed() {
             <h1 className="text-2xl font-bold text-blue-600">Linked</h1>
             <div className="flex items-center gap-4">
               <span className="text-sm text-gray-700">{profile.fullName}</span>
-              {profile.profileImage ? (
+              {profile.profilePhoto ? (
                 <img 
-                  src={profile.profileImage} 
+                  src={profile.profilePhoto} 
                   alt={profile.fullName}
                   className="w-8 h-8 rounded-full object-cover"
                 />
@@ -44,9 +44,9 @@ export default function Feed() {
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-white rounded-lg shadow p-8 text-center">
-          {profile.profileImage ? (
+          {profile.profilePhoto ? (
             <img 
-              src={profile.profileImage} 
+              src={profile.profilePhoto} 
               alt={profile.fullName}
               className="w-32 h-32 rounded-full object-cover mx-auto mb-4"
             />
@@ -68,6 +68,8 @@ export default function Feed() {
     </div>
   );
 }
+
+
 
 
 
