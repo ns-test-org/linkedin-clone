@@ -65,7 +65,7 @@ export default function ProfileSetup() {
           {step === 1 && (
             <div>
               <h2 className="text-3xl font-semibold text-gray-800 mb-2">
-                Let's build your profile
+                Let&apos;s build your profile
               </h2>
               <p className="text-gray-600 mb-8">
                 This information is required to get started
@@ -174,6 +174,7 @@ export default function ProfileSetup() {
               <div className="flex flex-col items-center">
                 <div className="w-32 h-32 rounded-full bg-gray-200 flex items-center justify-center mb-6">
                   {profile.profilePhoto ? (
+                    // eslint-disable-next-line @next/next/no-img-element
                     <img
                       src={profile.profilePhoto}
                       alt="Profile"
@@ -227,4 +228,5 @@ export default function ProfileSetup() {
     </div>
   );
 }
+
 
