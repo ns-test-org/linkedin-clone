@@ -76,7 +76,7 @@ export default function Landing() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors"
+                className="w-full bg-purple-600 text-white py-3 rounded-full font-semibold hover:bg-purple-700 transition-colors"
               >
                 Agree & Join
               </button>
@@ -87,5 +87,6 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
